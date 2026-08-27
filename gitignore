@@ -1,0 +1,12 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+full_agent_trajectory.json
+agent_response.json
+agent_response_raw.txt
+test_result_*.json
+test_error_*.txt
+agent_v2_result_*.json
+agent_v3_*.json
