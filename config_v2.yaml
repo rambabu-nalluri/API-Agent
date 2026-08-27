@@ -1,0 +1,18 @@
+base_url: https://ccdemo.mizecx.com
+authentication:
+  type: oauth2_client_credentials
+  token_url: /ccapi/oauth/token
+  grant_type: client_credentials
+headers:
+  Accept: application/json
+  Content-Type: application/json
+endpoints:
+  retrieve_record:
+    path: /ccapi/{entity}/retrieve  # Placeholder added here
+    method: GET
+  search_records:
+    method: POST
+    path: /ccapi/generic/searchResults # Search stays generic
+  save_record:
+    method: POST
+    path: /ccapi/{entity}/save      # Placeholder added here

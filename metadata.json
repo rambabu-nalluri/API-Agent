@@ -1,0 +1,26 @@
+{
+  "$Version": "4.01",
+  "$EntityContainer": "MizeCX.ClaimsContainer",
+  "MizeCX": {
+    "Claim": {
+      "$Kind": "EntityType",
+      "$Key": ["Id"],
+      "Id": { "$Type": "Edm.Int64", "$Nullable": false },
+      "ClaimNumber": { "$Type": "Edm.String" },
+      "SerialNumber": { "$Type": "Edm.String", "$Nullable": false },
+      "ProductCode": { "$Type": "Edm.String" },
+      "CustomerName": { "$Type": "Edm.String" },
+      "ClaimStatus": { "$Type": "Edm.String" },
+      "ClaimType": { "$Type": "Edm.String", "$Nullable": false },
+      "ClaimAmount": { "$Type": "Edm.Decimal", "$Scale": 2 },
+      "Description": { "$Type": "Edm.String" }
+    },
+    "ClaimsContainer": {
+      "$Kind": "EntityContainer",
+      "Claims": {
+        "$Kind": "EntitySet",
+        "$Type": "MizeCX.Claim"
+      }
+    }
+  }
+}

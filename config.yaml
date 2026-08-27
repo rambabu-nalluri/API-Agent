@@ -1,0 +1,29 @@
+base_url: https://ccdemo.mizecx.com
+authentication:
+  type: oauth2_client_credentials
+  token_url: /ccapi/oauth/token
+  grant_type: client_credentials
+headers:
+  Accept: application/json
+  Content-Type: application/json
+endpoints:
+  claim_retrieve:
+    path: /ccapi/claim/retrieve
+    method: GET
+    description: Retrieve claim by id
+    parameters:
+      claim_id_key: id
+      default_params: {}
+  save_claim:
+    method: POST
+    path: /ccapi/claim/save
+    description: Create claim
+  # --- NEW SEARCH ENDPOINT ---
+  search_claims:
+    method: POST
+    path: /ccapi/generic/searchResults
+    description: Search claims with pagination and filters
+    parameters:
+      default_params:
+        pageIndex: 0
+        pageSize: 50
