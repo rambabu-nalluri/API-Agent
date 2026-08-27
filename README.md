@@ -1,4 +1,4 @@
-# Mize Agentic System
+# Agentic System
 
 A Python integration for Mize CX that supports:
 
